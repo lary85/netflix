@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+body{
+    background: #000;
+    color: #fff;
+    
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(/images/netbackground.webp);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+    border-bottom: 6px solid #303030;
+}
+.netflixL{
+    width: 160px;
+    cursor: pointer;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15%;
+    
+}
+nav button{
+    border: 0;
+    outline: none;
+    background: #db0001;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.eng{
+    
+    align-items: center;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 7px 10px;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 100px;
+    
+    
+}
+.content h1{
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 600;
+    max-width: 650px;
+}
+.content h3{
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.signup{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+    
+    
+
+}
+.signup input{
+    flex: 1;
+    border: 1px solid gray;
+    outline: none;
+    margin-left: 20px;
+    background: rgba(0,0,0,0.7);
+    padding: 20px;
+    border-radius: 4px;
+    margin-inline: 10px;
+    color: #fff;
+    
+    
+}
+.signup button{
+    padding: 20px 15px;
+    background:  #db0001;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 40%;
+    font-weight: 700;  
+}
+.others{
+    padding: 50px 12%;
+    font-size: 22px;  
+}
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.text{
+    flex-basis: 50%;
+    margin: 20px;
+}
+.column-img{
+    flex-basis: 50%;
+    margin: 20px;
+}
+.column-img img{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+.others h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.question{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+}
+.question h2{
+    font-weight: 600;
+    font-size: 40px;
+}
+.questions{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+.questions li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+    
+}
+.questions li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    cursor: pointer;
+    margin-bottom: 2px;
+    position: relative;
+}
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    
+}
+
+input[type="radio"]{
+    display: none;
+}
+.questions .contents{
+    background: #303030;
+    cursor: text;
+    padding:0 20px;
+    text-align: left;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+    
+}
+.questions input[type="radio"]:checked + label + .contents{
+    max-height: 600px;
+    padding: 30px 20px;
+    
+}
+.questions input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+
+.sign1{
+    margin-top: 10px;
+}
+.sign1 button{
+    padding: 20px 0px;
+    background:  #db0001;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 20%;
+    font-weight: 700; 
+}
+.sign1 input{
+    flex: 1;
+    border: 1px solid gray;
+    outline: none;
+    margin-left: 20px;
+    background: rgba(0,0,0,0.7);
+    padding: 20px;
+    padding-right: 15%;
+    border-radius: 4px;
+    margin-inline: 10px;
+    color: #fff;
+}
+
+.footer{
+    padding: 50px 15% 10px;
+    border: 6px solid #303030;
+    color: #777;
+    
+}
+.footer h2{
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: underline;
+}
+.footer .col{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+.footer .col a{
+    display: block;
+    
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+
+}
+.footer .row{
+    align-items: flex-start;
+    padding: 10px 0;
+}
+.footer .eng{
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 4px;
+}
+.footer .eng i{
+    color: #fff;
+    padding-right: 10px;
+    
+}
+.naija{
+     margin-top: 20px;
+     margin-bottom: 10px;
+     font-size: 15px;
+     align-items: end;
+}
+
+/* media queries for small screen */
+
+@media only screen and (max-width: 600px){
+    .netflixL{
+        width: 100px;
+        cursor: pointer;
+    }
+    .content{
+        position: unset;
+        transform: none;
+        padding-top: 150px;
+    }
+
+}
